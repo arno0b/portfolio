@@ -125,7 +125,22 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Docker',
+    'Ansible',
+    'Jenkins',
+    'Kubernetes',
+    'Git',
+    'Prometheus',
+    'Sysdig',
+    'Grafana',
+    'Jaeger',
+    'Tensorflow',
+    'Pytorch',
+    'Python',
+    'Bash',
+    'Linux',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,26 +149,23 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
+            <p>Hello! I'm Saadman Sakif Arnob, from Dhaka, Bangladesh.</p>
             <p>
-              Hello! I'm Saadman Sakif Arnob, from Dhaka, Bangladesh.
-            </p>
-            <p>
-              An DevOps enthusiast, passionate about driving automation, scalability, and efficiency. 
-              I focus on combining infrastructure optimization, CI/CD pipeline automation, and cloud 
-              technologies to ensure smooth, reliable service delivery.
+              An DevOps enthusiast, passionate about driving automation, scalability, and
+              efficiency. I focus on combining infrastructure optimization, CI/CD pipeline
+              automation, and cloud technologies to ensure smooth, reliable service delivery.
             </p>
 
             <p>
-            I completed my Bachelor's in {' '}
-              <a href="https://eee.iutoic-dhaka.edu/">Electrical Engineering</a>, from{' '}
-              <a href="https://www.iutoic-dhaka.edu/">IUT, Dhaka</a>, Currently I am working as a System Engineer at {' '}
-              <a href="https://www.bkash.com/">bKash</a>, {' '}
-              a leading FinTech Company in Bangladesh. My role involves optimizing infrastructure, 
-              automating deployments, and ensuring the seamless functioning of digital financial services 
-              relied on by millions daily.
+              I completed my Bachelor's in{' '}
+              <a href="https://eee.iutoic-dhaka.edu/">Electrical Engineering</a> from{' '}
+              <a href="https://www.iutoic-dhaka.edu/">IUT, Dhaka</a>. I am working as a System
+              Engineer at <a href="https://www.bkash.com/">bKash</a>, a leading FinTech Company in
+              Bangladesh. My role involves optimizing infrastructure, automating deployments, and
+              ensuring the seamless functioning of digital financial services relied on by millions
+              daily.
             </p>
-
-            <p>Here are a few technologies I’ve familiarized myself with:</p>
+            <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">

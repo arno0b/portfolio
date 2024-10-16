@@ -61,17 +61,19 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Saadman Sakif Arnob.</h2>;
-  const three = <h3 className="big-heading">System Engineer.</h3>;
+  const three = <h3 className="big-heading">System Engineer</h3>;
   const four = (
     <>
       <p>
-      To me, DevOps is about balance—moving fast without breaking things. 
-      Moving fast without breaking things.
+        To me, DevOps is about balance—moving fast without breaking things. Moving fast without
+        breaking things.
       </p>
-      <p>I streamline processes, accelerate deployments, and ensure systems are 
-        rock-solid. From automating CI/CD pipelines to optimizing on-premise & 
-        cloud infrastructure, I thrive on making things efficient so teams can 
-        focus on innovation while systems scale effortlessly and work reliably.
+
+      <p>
+        I streamline processes, accelerate deployments, and ensure systems are rock-solid. From
+        automating CI/CD pipelines to optimizing on-premise & cloud infrastructure, I thrive on
+        making things efficient so teams can focus on innovation while systems scale effortlessly
+        and work reliably.
       </p>
     </>
   );
@@ -81,7 +83,7 @@ const Hero = () => {
       href="https://www.newline.co/courses/build-a-spotify-connected-app"
       target="_blank"
       rel="noreferrer">
-      Get In Touch
+      Check out my resume!
     </a>
   );
 
