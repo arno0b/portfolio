@@ -5,7 +5,7 @@ module.exports = {
     title: 'Arnob',
     description:
       'Saadman Sakif Arnob, from Dhaka, Bangladesh. An DevOps enthusiast, passionate about driving automation, scalability, and efficiency.',
-    siteUrl: 'https://arnob.netlify.app', // No trailing slash allowed!
+    siteUrl: 'https://arn0b.netlify.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@sakifarnob98',
   },
