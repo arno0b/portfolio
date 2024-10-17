@@ -7,20 +7,24 @@ module.exports = {
       url: 'https://github.com/arno0b',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      name: 'Scholar',
+      url: 'https://scholar.google.com/citations?user=0W5bcBIAAAAJ&hl=en',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://x.com/sakifarnob98',
     },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/sakifarnob98',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      name: 'Medium',
+      url: 'https://medium.com/@sakifarnob98',
+    },
+    {
+      name: 'Tableau',
+      url: 'https://public.tableau.com/app/profile/sakif.arnob/vizzes',
     },
   ],
 

@@ -23,7 +23,7 @@ const Icon = ({ name }) => {
       return <IconAppStore />;
     case 'Bookmark':
       return <IconBookmark />;
-    case 'Codepen':
+    case 'Medium':
       return <IconCodepen />;
     case 'External':
       return <IconExternal />;
@@ -33,7 +33,7 @@ const Icon = ({ name }) => {
       return <IconFork />;
     case 'GitHub':
       return <IconGitHub />;
-    case 'Instagram':
+    case 'Scholar':
       return <IconInstagram />;
     case 'Linkedin':
       return <IconLinkedin />;
@@ -41,7 +41,7 @@ const Icon = ({ name }) => {
       return <IconLoader />;
     case 'Logo':
       return <IconLogo />;
-    case 'PlayStore':
+    case 'Tableau':
       return <IconPlayStore />;
     case 'Star':
       return <IconStar />;

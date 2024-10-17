@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'Arnob',
     description:
-      'Saadman Sakif Arnob, from Dhaka, Bangladesh. An MLOps enthusiast, passionate about integrating DevOps principles with machine learning to enhance automation, scalability, and the operationalization of intelligent systems.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+      'Saadman Sakif Arnob, from Dhaka, Bangladesh. An DevOps enthusiast, passionate about driving automation, scalability, and efficiency.',
+    siteUrl: 'https://arnob.netlify.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@sakifarnob98',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
