@@ -5,7 +5,7 @@ external: 'https://ieeexplore.ieee.org/document/10054396'
 tech:
   - IEEE Access Journal
   - Cited by 11
-company: 'ss'
+company: 'AIMS Lab'
 showInProjects: true
 ---
 

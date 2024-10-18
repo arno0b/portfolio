@@ -5,47 +5,65 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
+// Import SVG as Components
+import DockerIcon from '../../images/skills/docker';
+import AnsibleIcon from '../../images/skills/ansible';
+import JenkinsIcon from '../../images/skills/jenkins';
+import KubernetesIcon from '../../images/skills/kubernetes';
+import GitIcon from '../../images/skills/git';
+import PrometheusIcon from '../../images/skills/prometheus';
+import SysdigIcon from '../../images/skills/sysdig';
+import GrafanaIcon from '../../images/skills/grafana';
+import PythonIcon from '../../images/skills/python';
+import BashIcon from '../../images/skills/bash';
+import TensorFlowIcon from '../../images/skills/tensorflow';
+import PytorchIcon from '../../images/skills/pytorch';
+import RedhatIcon from '../../images/skills/redhat';
+import F5Icon from '../../images/skills/f5';
+
 const StyledAboutSection = styled.section`
   max-width: 900px;
 
   .inner {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 50px;
+    grid-template-columns: 4fr 3fr;
+    grid-gap: 70px;
 
     @media (max-width: 768px) {
       display: block;
     }
   }
 `;
+
 const StyledText = styled.div`
+  .skills-category {
+    margin-top: 40px;
+  }
+
   ul.skills-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    grid-gap: 0 10px;
+    grid-template-columns: repeat(6, minmax(40px, 40px));
+    grid-gap: 20px;
     padding: 0;
-    margin: 20px 0 0 0;
-    overflow: hidden;
+    margin: 10px 0;
     list-style: none;
 
     li {
-      position: relative;
-      margin-bottom: 10px;
-      padding-left: 20px;
-      font-family: var(--font-mono);
-      font-size: var(--fz-xs);
+      display: flex;
+      align-items: center;
+      gap: 10px;
 
-      &:before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-        color: var(--green);
-        font-size: var(--fz-sm);
-        line-height: 12px;
+      svg {
+        width: 40px;
+        height: 40px;
       }
     }
   }
+  p {
+    margin-bottom: 40px;
+  }
 `;
+
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
@@ -118,29 +136,28 @@ const About = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
+    if (prefersReducedMotion) {return;}
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = [
-    'Docker',
-    'Ansible',
-    'Jenkins',
-    'Kubernetes',
-    'Git',
-    'Prometheus',
-    'Sysdig',
-    'Grafana',
-    'Jaeger',
-    'Tensorflow',
-    'Pytorch',
-    'Python',
-    'Bash',
-    'Linux',
-  ];
+  const skillCategories = {
+    'DevOps Tools': [
+      <DockerIcon key="docker" />,
+      <AnsibleIcon key="ansible" />,
+      <JenkinsIcon key="jenkins" />,
+      <KubernetesIcon key="kubernetes" />,
+      <GitIcon key="git" />,
+      <RedhatIcon key="redhat" />,
+    ],
+    'Monitoring & Observability': [
+      <PrometheusIcon key="prometheus" />,
+      <SysdigIcon key="sysdig" />,
+      <GrafanaIcon key="grafana" />,
+      <F5Icon key="f5" />,
+    ],
+    'Programming Language': [<PythonIcon key="python" />, <BashIcon key="bash" />],
+    'ML Framework': [<TensorFlowIcon key="tensorflow" />, <PytorchIcon key="pytorch" />],
+  };
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -151,9 +168,9 @@ const About = () => {
           <div>
             <p>Hello! I'm Saadman Sakif Arnob, from Dhaka, Bangladesh.</p>
             <p>
-              An DevOps enthusiast, passionate about driving automation, scalability, and
-              efficiency. I focus on combining infrastructure optimization, CI/CD pipeline
-              automation, and cloud technologies to ensure smooth, reliable service delivery.
+              A DevOps enthusiast, passionate about driving automation, scalability, and efficiency.
+              I focus on combining infrastructure optimization, CI/CD pipeline automation, and cloud
+              technologies to ensure smooth, reliable service delivery.
             </p>
 
             <p>
@@ -168,9 +185,16 @@ const About = () => {
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
+          {Object.entries(skillCategories).map(([category, icons], index) => (
+            <div className="skills-category" key={index}>
+              <h4>{category}</h4>
+              <ul className="skills-list">
+                {icons.map(icon => (
+                  <li key={icon.key}>{icon}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </StyledText>
 
         <StyledPic>
