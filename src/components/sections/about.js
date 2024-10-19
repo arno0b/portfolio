@@ -20,6 +20,8 @@ import TensorFlowIcon from '../../images/skills/tensorflow';
 import PytorchIcon from '../../images/skills/pytorch';
 import RedhatIcon from '../../images/skills/redhat';
 import F5Icon from '../../images/skills/f5';
+import TerraformIcon from '../../images/skills/terraform';
+import AirflowIcon from '../../images/skills/airflow';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -136,7 +138,9 @@ const About = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {return;}
+    if (prefersReducedMotion) {
+      return;
+    }
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
@@ -148,6 +152,7 @@ const About = () => {
       <KubernetesIcon key="kubernetes" />,
       <GitIcon key="git" />,
       <RedhatIcon key="redhat" />,
+      <TerraformIcon key="terraform" />,
     ],
     'Monitoring & Observability': [
       <PrometheusIcon key="prometheus" />,
@@ -156,7 +161,11 @@ const About = () => {
       <F5Icon key="f5" />,
     ],
     'Programming Language': [<PythonIcon key="python" />, <BashIcon key="bash" />],
-    'ML Framework': [<TensorFlowIcon key="tensorflow" />, <PytorchIcon key="pytorch" />],
+    'ML Framework': [
+      <TensorFlowIcon key="tensorflow" />,
+      <PytorchIcon key="pytorch" />,
+      <AirflowIcon key="airflow" />,
+    ],
   };
 
   return (
