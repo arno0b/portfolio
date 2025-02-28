@@ -4,7 +4,7 @@ title: 'Energy Demand Forecasting and Optimizing Electric Systems for Developing
 external: 'https://ieeexplore.ieee.org/document/10054396'
 tech:
   - IEEE Access Journal
-  - Cited by 11
+  - Cited by 19
 company: 'AIMS Lab'
 showInProjects: true
 ---
