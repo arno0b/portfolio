@@ -65,8 +65,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        To me, DevOps is about balance—moving fast without breaking things. Moving fast without
-        breaking things.
+        To me, DevOps is about balance——moving fast without breaking things.
       </p>
 
       <p>
