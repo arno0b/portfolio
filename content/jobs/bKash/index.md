@@ -8,8 +8,9 @@ url: 'https://www.bkash.com/'
 ---
 
 - Automated **70%** of routine tasks using **Bash** scripts, reducing operational hazards by **50%**.
-- Streamlined deployment for **10+** products using **Docker**, **Kubernetes**, and **Jenkins**, cutting deployment time by **40%**.
-- Managed **F5 load balancers** across **100+** endpoints using **Ansible**, reducing errors by **60%**.
+- Partnered with dev teams to containerize legacy apps using Docker and Helm, leading to a 95% improvement in deployment consistency across environments.
+- Wrote over 300+ Ansible playbooks and automated patch management across dev, staging, and production environments.
+- Coordinated with the network team to optimize load balancing and failover using F5 LTM
 - Integrated **Sysdig**, **Prometheus**, and **ELK Stack** for alerting, monitoring, and logging, improving incident response time by **35%**.
 - Deployed **200+** **WAF policies** for F5 endpoints, reducing security incidents by **30%**.
 - Integrated **TYK API Gateway** for API-based products.
