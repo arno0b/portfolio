@@ -61,11 +61,11 @@ const Hero = () => {
 
   const one = <h1>Hi, I'm</h1>;
   const two = <h2 className="big-heading">Saadman Sakif Arnob.</h2>;
-  const three = <h3 className="big-heading">System Engineer</h3>;
+  const three = <h3 className="big-heading">Platform Engineer</h3>;
   const four = (
     <>
       <p>
-        To me, DevOps is about balance——moving fast without breaking things.
+        To me, DevOps is about balance - moving fast without breaking things.
       </p>
 
       <p>
