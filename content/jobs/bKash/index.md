@@ -1,9 +1,9 @@
 ---
 date: '2021-06-11'
-title: 'System Engineer'
+title: 'Platform Engineer'
 company: 'bKash Limited'
 location: On-Site
-range: 'June 2023 - '
+range: 'June 2023 - July 2025'
 url: 'https://www.bkash.com/'
 ---
 
