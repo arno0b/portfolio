@@ -175,7 +175,7 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Saadman Sakif Arnob, from Dhaka, Bangladesh.</p>
+            <p>Hello! I'm Saadman Sakif Arnob, from Sydney, Australia.</p>
             <p>
               A DevOps enthusiast, passionate about driving automation, scalability, and efficiency.
               I focus on combining infrastructure optimization, CI/CD pipeline automation, and cloud
@@ -183,9 +183,9 @@ const About = () => {
             </p>
 
             <p>
-              I completed my Bachelor's in{' '}
-              <a href="https://eee.iutoic-dhaka.edu/">Electrical Engineering</a> from{' '}
-              <a href="https://www.iutoic-dhaka.edu/">IUT, Dhaka</a>. I am working as a System
+              I am currently doing my Master's in{' '}
+              <a href="https://www.uow.edu.au/">Computer Science (Specializing in ML and Big Data)</a> from{' '}
+              <a href="https://www.uow.edu.au/">University of Wollongong</a>. I worked as a DevOps
               Engineer at <a href="https://www.bkash.com/">bKash</a>, a leading FinTech Company in
               Bangladesh. My role involves optimizing infrastructure, automating deployments, and
               ensuring the seamless functioning of digital financial services relied on by millions
