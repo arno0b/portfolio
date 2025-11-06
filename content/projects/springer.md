@@ -4,6 +4,7 @@ title: 'Time-series Multivariate Multistep Traffic Flow Forecasting using Tempor
 external: 'https://link.springer.com/article/10.1007/s13177-025-00480-1'
 tech:
   - International Journal of Intelligent Transportation Systems Research
+  - Cited by 1
 company: 'Self'
 showInProjects: true
 ---
