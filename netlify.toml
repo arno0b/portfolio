@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "public"
+
+[build.environment]
+  # Gatsby 3 does not run on Node 17+ (OpenSSL 3 / webpack 4 hashing).
+  # Keep this in sync with .nvmrc.
+  NODE_VERSION = "16.20.2"
