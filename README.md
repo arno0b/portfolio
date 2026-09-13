@@ -5,14 +5,7 @@
   My Portfolio Website
 </h1>
 <p align="center">
-  This website <a href="https://arn0b.netlify.app" target="_blank"> saadman-arnob.io</a>, was built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
-<p align="center">
-
-<p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
-  </a>
+  This website, <a href="https://arn0b.netlify.app" target="_blank">arn0b.netlify.app</a>, was built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 
 ![demo](https://raw.githubusercontent.com/arno0b/portfolio/dev/src/images/demo.png)
@@ -39,7 +32,11 @@ Feel free to fork this repo! Just remember to give proper credit by linking back
 
    ```sh
    nvm install
+   nvm use
    ```
+
+   > Gatsby 3 does not build on Node 17+. This repo pins Node 16 in `.nvmrc` and
+   > `netlify.toml` — keep the two in sync if you change it.
 
 3. Install dependencies
 
@@ -71,11 +68,11 @@ Feel free to fork this repo! Just remember to give proper credit by linking back
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Navy           | ![#0a192f](https://placehold.co/12x12/0a192f/0a192f.png) `#0a192f` |
+| Light Navy     | ![#112240](https://placehold.co/12x12/112240/112240.png) `#112240` |
+| Lightest Navy  | ![#233554](https://placehold.co/12x12/233554/233554.png) `#233554` |
+| Slate          | ![#8892b0](https://placehold.co/12x12/8892b0/8892b0.png) `#8892b0` |
+| Light Slate    | ![#a8b2d1](https://placehold.co/12x12/a8b2d1/a8b2d1.png) `#a8b2d1` |
+| Lightest Slate | ![#ccd6f6](https://placehold.co/12x12/ccd6f6/ccd6f6.png) `#ccd6f6` |
+| White          | ![#e6f1ff](https://placehold.co/12x12/e6f1ff/e6f1ff.png) `#e6f1ff` |
+| Green          | ![#64ffda](https://placehold.co/12x12/64ffda/64ffda.png) `#64ffda` |

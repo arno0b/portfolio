@@ -14,6 +14,9 @@ const variables = css`
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100, 255, 218, 0.1);
+    /* Data-viz mark: a calmer step than --green so charts stay recessive
+       and clear the lightness band against the --light-navy card surface. */
+    --chart-bar: #19a085;
     --pink: #f57dff;
     --blue: #57cbff;
 

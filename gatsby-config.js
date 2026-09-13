@@ -29,7 +29,11 @@ module.exports = {
         icon: 'src/images/logo.png',
       },
     },
-    `gatsby-plugin-offline`,
+    // Was `gatsby-plugin-offline`. A 5-section portfolio gains nothing from an
+    // offline service worker, and its 1.4MB of workbox served stale builds to
+    // returning visitors. This unregisters the SW anyone already has installed --
+    // keep it deployed for a good while before removing it entirely.
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,15 +51,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts`,
+        name: `publications`,
+        path: `${__dirname}/content/publications`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `projects`,
-        path: `${__dirname}/content/projects`,
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
       },
     },
     {
@@ -147,12 +151,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-45666519-2',
       },
     },
   ],
