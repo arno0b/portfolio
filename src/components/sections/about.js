@@ -184,12 +184,12 @@ const About = () => {
 
             <p>
               I am currently doing my Master's in{' '}
-              <a href="https://www.uow.edu.au/">Computer Science</a> (Specializing in ML and Big Data) from{' '}
-              <a href="https://www.uow.edu.au/">University of Wollongong</a>. I worked as a Platform
-              Engineer at <a href="https://www.bkash.com/">bKash</a>, a leading FinTech Company in
-              Bangladesh. My role involves optimizing infrastructure, automating deployments, and
-              ensuring the seamless functioning of digital financial services relied on by millions
-              daily.
+              <a href="https://www.uow.edu.au/">Computer Science</a> (Specializing in ML and Big
+              Data) from <a href="https://www.uow.edu.au/">University of Wollongong</a>. I worked as
+              a Platform Engineer at <a href="https://www.bkash.com/">bKash</a>, a leading FinTech
+              Company in Bangladesh. My role involved optimizing infrastructure, automating
+              deployments, and ensuring the seamless functioning of digital financial services
+              relied on by millions daily.
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>

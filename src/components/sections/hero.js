@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
+import { email } from '@config';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -64,9 +65,7 @@ const Hero = () => {
   const three = <h3 className="big-heading">Platform Engineer</h3>;
   const four = (
     <>
-      <p>
-        To me, DevOps is about balance - moving fast without breaking things.
-      </p>
+      <p>To me, DevOps is about balance - moving fast without breaking things.</p>
 
       <p>
         I streamline processes, accelerate deployments, and ensure systems are rock-solid. From
@@ -77,8 +76,8 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a className="email-link" href="https://github.com/arno0b" target="_blank" rel="noreferrer">
-      Check out my profile!
+    <a className="email-link" href={`mailto:${email}`}>
+      Get in touch
     </a>
   );
 

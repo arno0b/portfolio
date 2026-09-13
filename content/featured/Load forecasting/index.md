@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Electricity Load Forecasting'
-cover: './lf.png'
+cover: './lf.jpg'
 github: 'https://github.com/arno0b/Short-term-load-forecasting-using-deep-learning-/tree/main'
 
 tech:

@@ -1,5 +1,5 @@
 ---
-date: '2021-06-11'
+date: '2023-06-01'
 title: 'Platform Engineer'
 company: 'bKash Limited'
 location: On-Site
