@@ -1,0 +1,47 @@
+{
+  "fetchedAt": "2026-08-28T10:26:44.306Z",
+  "source": "Google Scholar",
+  "profileUrl": "https://scholar.google.com/citations?user=0W5bcBIAAAAJ&hl=en",
+  "totals": {
+    "citations": 65,
+    "hIndex": 2,
+    "i10Index": 1
+  },
+  "citationsByYear": {
+    "2023": 2,
+    "2024": 14,
+    "2025": 28,
+    "2026": 16
+  },
+  "publications": [
+    {
+      "scholarId": "0W5bcBIAAAAJ:u-x6o8ySG0sC",
+      "title": "Energy Demand Forecasting and Optimizing Electric Systems for Developing Countries: A Systematic Review",
+      "year": 2023,
+      "citations": 56,
+      "citationsByYear": {
+        "2023": 2,
+        "2024": 14,
+        "2025": 26,
+        "2026": 9
+      }
+    },
+    {
+      "scholarId": "0W5bcBIAAAAJ:9yKSN-GCB0IC",
+      "title": "Time-series multivariate multistep traffic flow forecasting using temporal fusion transformers",
+      "year": 2025,
+      "citations": 9,
+      "citationsByYear": {
+        "2025": 2,
+        "2026": 7
+      }
+    },
+    {
+      "scholarId": "0W5bcBIAAAAJ:u5HHmVD_uO8C",
+      "title": "Multi-variate Time-series Load Forecasting using Deep Learning",
+      "year": 2022,
+      "citations": 0,
+      "citationsByYear": {}
+    }
+  ]
+}
