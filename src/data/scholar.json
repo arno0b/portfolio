@@ -1,9 +1,9 @@
 {
-  "fetchedAt": "2026-08-28T10:26:44.306Z",
+  "fetchedAt": "2026-09-28T06:14:51.356Z",
   "source": "Google Scholar",
   "profileUrl": "https://scholar.google.com/citations?user=0W5bcBIAAAAJ&hl=en",
   "totals": {
-    "citations": 65,
+    "citations": 67,
     "hIndex": 2,
     "i10Index": 1
   },
@@ -11,19 +11,19 @@
     "2023": 2,
     "2024": 14,
     "2025": 28,
-    "2026": 16
+    "2026": 18
   },
   "publications": [
     {
       "scholarId": "0W5bcBIAAAAJ:u-x6o8ySG0sC",
       "title": "Energy Demand Forecasting and Optimizing Electric Systems for Developing Countries: A Systematic Review",
       "year": 2023,
-      "citations": 56,
+      "citations": 58,
       "citationsByYear": {
         "2023": 2,
         "2024": 14,
         "2025": 26,
-        "2026": 9
+        "2026": 11
       }
     },
     {
