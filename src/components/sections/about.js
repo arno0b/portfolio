@@ -92,17 +92,14 @@ const StyledPic = styled.div`
         transform: translate(8px, 8px);
       }
 
-      .img {
-        filter: none;
-        mix-blend-mode: normal;
+      &:before {
+        opacity: 0;
       }
     }
 
     .img {
       position: relative;
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
 
@@ -117,11 +114,23 @@ const StyledPic = styled.div`
       transition: var(--transition);
     }
 
+    /* The green tint rides on top of the photo as its own layer rather than
+       being blended into it, so its strength is a single number. Blending the
+       image itself gave no usable dial: multiply against --green zeroes the
+       red and blue channels whatever the source looks like. */
     &:before {
       top: 0;
       left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
+      z-index: 1;
+      background-color: var(--green);
+      mix-blend-mode: multiply;
+      opacity: 0.4;
+
+      /* No hover on touch, so phones would be stuck with the tint and never
+         see the real photo. Show it untreated instead. */
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     &:after {
