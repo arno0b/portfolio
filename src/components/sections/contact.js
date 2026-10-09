@@ -32,7 +32,7 @@ const StyledContactSection = styled.section`
   }
 
   .title {
-    font-size: clamp(40px, 5vw, 60px);
+    font-size: clamp(34px, 5vw, 60px);
   }
 
   .email-link {

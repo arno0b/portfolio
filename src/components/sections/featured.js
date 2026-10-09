@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -125,7 +126,7 @@ const StyledProject = styled.li`
 
   .project-title {
     color: var(--lightest-slate);
-    font-size: clamp(24px, 5vw, 28px);
+    font-size: clamp(21px, 5vw, 28px);
 
     @media (min-width: 768px) {
       margin: 0 0 20px;
@@ -169,6 +170,19 @@ const StyledProject = styled.li`
       &:hover {
         box-shadow: none;
       }
+
+      /* Clamp the teaser on small screens; the toggle below reveals the rest. */
+      p {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+      }
+
+      &.is-expanded p {
+        display: block;
+        overflow: visible;
+      }
     }
 
     a {
@@ -178,6 +192,23 @@ const StyledProject = styled.li`
     strong {
       color: var(--white);
       font-weight: normal;
+    }
+  }
+
+  .project-description-toggle {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fz-xs);
+      cursor: pointer;
     }
   }
 
@@ -250,7 +281,9 @@ const StyledProject = styled.li`
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
-      opacity: 0.25;
+      /* Low enough that a text-heavy cover reads as texture, not as words
+         competing with the copy on top of it. */
+      opacity: 0.1;
     }
 
     a {
@@ -302,6 +335,35 @@ const StyledProject = styled.li`
     }
   }
 `;
+
+/**
+ * The description is clamped to four lines below 768px. The toggle is hidden by
+ * CSS on wider screens, where the full text always shows.
+ */
+const ProjectDescription = ({ html }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <>
+      <div
+        className={`project-description${isExpanded ? ' is-expanded' : ''}`}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+
+      <button
+        type="button"
+        className="project-description-toggle"
+        aria-expanded={isExpanded}
+        onClick={() => setIsExpanded(!isExpanded)}>
+        {isExpanded ? 'Show less' : 'Read more'}
+      </button>
+    </>
+  );
+};
+
+ProjectDescription.propTypes = {
+  html: PropTypes.string.isRequired,
+};
 
 const Featured = () => {
   const data = useStaticQuery(graphql`
@@ -367,10 +429,7 @@ const Featured = () => {
                       <a href={external}>{title}</a>
                     </h3>
 
-                    <div
-                      className="project-description"
-                      dangerouslySetInnerHTML={{ __html: html }}
-                    />
+                    <ProjectDescription html={html} />
 
                     {tech.length && (
                       <ul className="project-tech-list">

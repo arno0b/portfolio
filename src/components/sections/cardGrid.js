@@ -11,7 +11,7 @@ export const StyledCardSection = styled.section`
   counter-increment: section 1;
 
   h2 {
-    font-size: clamp(24px, 5vw, var(--fz-heading));
+    font-size: clamp(21px, 5vw, var(--fz-heading));
   }
 
   .archive-link {

@@ -122,10 +122,10 @@ const GlobalStyle = createGlobalStyle`
       padding: 200px 100px;
     }
     @media (max-width: 768px) {
-      padding: 150px 50px;
+      padding: 120px 35px;
     }
     @media (max-width: 480px) {
-      padding: 125px 25px;
+      padding: 100px 20px;
     }
 
     &.fillHeight {
@@ -135,10 +135,10 @@ const GlobalStyle = createGlobalStyle`
         padding: 0 100px;
       }
       @media (max-width: 768px) {
-        padding: 0 50px;
+        padding: 0 35px;
       }
       @media (max-width: 480px) {
-        padding: 0 25px;
+        padding: 0 20px;
       }
     }
   }
@@ -149,7 +149,7 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1000px;
 
     @media (max-width: 768px) {
-      padding: 80px 0;
+      padding: 60px 0;
     }
 
     @media (max-width: 480px) {
@@ -171,12 +171,12 @@ const GlobalStyle = createGlobalStyle`
 
   .big-heading {
     margin: 0;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(34px, 8vw, 80px);
   }
 
   .medium-heading {
     margin: 0;
-    font-size: clamp(40px, 8vw, 60px);
+    font-size: clamp(34px, 8vw, 60px);
   }
 
   .numbered-heading {
@@ -185,7 +185,7 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     margin: 10px 0 40px;
     width: 100%;
-    font-size: clamp(26px, 5vw, var(--fz-heading));
+    font-size: clamp(22px, 5vw, var(--fz-heading));
     white-space: nowrap;
 
     &:before {

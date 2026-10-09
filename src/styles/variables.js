@@ -33,6 +33,20 @@ const variables = css`
     --fz-xxl: 22px;
     --fz-heading: 32px;
 
+    /* Small screens step the whole ramp down ~12% so a phone shows more per
+       screen without the layout reading as packed. Everything sized off these
+       vars scales with it; the clamp() minimums in GlobalStyle match. */
+    @media (max-width: 768px) {
+      --fz-xxs: 11px;
+      --fz-xs: 12px;
+      --fz-sm: 13px;
+      --fz-md: 15px;
+      --fz-lg: 16px;
+      --fz-xl: 18px;
+      --fz-xxl: 19px;
+      --fz-heading: 28px;
+    }
+
     --border-radius: 4px;
     --nav-height: 100px;
     --nav-scroll-height: 70px;
